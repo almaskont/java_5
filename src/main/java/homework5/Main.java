@@ -8,7 +8,7 @@ public class Main {
         employeeArray[1] = new Employee("Petrov Petr", "Manager", "petrov.petr@mailbox.com", "892312313", 15000, 25);
         employeeArray[2] = new Employee("Kontorbayev Almas", "Director", "kontorbayev.almas@mailbox.com", "892312314", 100000, 55);
         employeeArray[3] = new Employee("Kim Sergey", "DevOps", "kim.sergey@mailbox.com", "892312315", 70000, 35);
-        employeeArray[4] = new Employee("Maulen Iskakov", "TeamLead", "some.dude@mailbox.com", "892312316", 80000, 41);
+        employeeArray[4] = new Employee("Iskakov Maulen", "TeamLead", "some.dude@mailbox.com", "892312316", 80000, 41);
 
         for (int i = 0; i < employeeArray.length; i++) {
             if(employeeArray[i].getAge() >= 40) {
