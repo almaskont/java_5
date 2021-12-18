@@ -17,8 +17,8 @@ public class Plate {
     }
 
     public void decreaseFood(int catEatFoodCount) {
-        if(foodCount > catEatFoodCount){
-            foodCount -=catEatFoodCount;
+        if (foodCount > catEatFoodCount) {
+            foodCount -= catEatFoodCount;
         } else {
             foodCount = 0;
         }

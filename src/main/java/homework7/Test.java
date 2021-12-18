@@ -27,16 +27,15 @@ public class Test {
         }
     }
 
-    private static int feedCats(Cat[] myCats, Plate plate) throws InterruptedException {
+    private static int feedCats(Cat[] myCats, Plate plate) {
         int fill = 0;
         for (Cat myCat : myCats) {
             if (!myCat.isFull()) {
                 myCat.eat(plate);
                 plate.printInfo();
                 System.out.printf("%s is %s%n", myCat.getName(), (myCat.isFull() ? "full" : "hungry for " + myCat.getHungryFor()));
-                Thread.sleep(1000);
             }
-            if(plate.getFoodCount() == 0){
+            if (plate.getFoodCount() == 0) {
                 fill += myCat.getHungryFor();
             }
         }

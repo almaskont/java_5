@@ -11,7 +11,7 @@ public class Cat {
     public Cat(String name, int toFull) {
         this.name = name;
         this.toFull = toFull;
-        hungryFor = ThreadLocalRandom.current().nextInt(toFull)+1;
+        hungryFor = ThreadLocalRandom.current().nextInt(toFull) + 1;
     }
 
     public String getName() {
